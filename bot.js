@@ -36,6 +36,10 @@ client.on('message', (channel, tags, message, self) => {
     client.say(channel, `Join our Discord! https://discord.gg/BktMztHNuW`);
   }
 
+  if (message.toLowerCase() === '!donate') {
+    client.say(channel, `${tags.username}, you don't have to donate. If you really want to, though, my donation link is https://streamlabs.com/norien711`);
+  }
+
   /**
  * Random commands
  */
